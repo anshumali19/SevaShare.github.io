@@ -1,0 +1,208 @@
+:root {
+    /* Primary Colors */
+    --sky-blue: #2da9e7;
+    --light-steel-blue: #92a8d1;
+
+    /* Secondary Colors */
+    --light-cyan-blue: #80ced6;
+    --powder-blue: #b7d7e8;
+
+    /* Neutral Colors */
+    --dark-charcoal: #3b3a30;
+    --medium-gray: #b2b2b2;
+    --very-light-gray: #f0efef;
+
+    /* Accent Colors */
+    --light-greenish-gray: #ddeedd;
+    --light-lavender: #E6E6FA;
+}
+option {
+    background-color: #f7f7f7;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0efef;  
+}
+
+.navbar {
+    background-color: var(--sky-blue);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+}
+.nav-link {
+    color: var(--dark-charcoal);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--light-cyan-blue);
+    color: var(--dark-charcoal);
+    border-radius: 5px;
+    transform: scale(1.05);
+
+}
+.btn-chat {
+    background-color: white; /* Set background to white */
+    color: var(--dark-charcoal); /* Set text color to light cyan blue */
+    border: 2px solid var(--light-cyan-blue); /* Set border to light cyan blue */
+    font-size: 1.3rem;
+}
+
+.btn-chat:hover {
+    background-color: var(--light-cyan-blue); /* Change background on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05);
+}
+.btn-primary:hover {
+    transform: scale(1.05);  
+}
+.donate-section {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s;
+    margin-bottom: 40px;
+    box-shadow:0 0 20px 20px #ddeedd;
+}
+
+select:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    color: var(--sky-blue);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 6px; 
+    font-size: 2rem;
+}
+
+label {
+    color: var(--dark-charcoal);
+    font-size: 1.2rem;
+}
+
+.form-select {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--sky-blue);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+footer {
+    width: 100%; /* Ensure footer spans full width */
+    background-color: whitesmoke;
+    color: grey;
+    padding: 15px 0; /* Top and Bottom padding */
+    border-top: 4px solid var(--light-cyan-blue);
+    text-align: center;
+    margin: 0; /* Remove default margins */
+    font-size: 1.3rem;
+}
+.btn-primary:hover {
+    background-color: #208dc6;
+}
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .btn-chat {
+        font-size: 1rem;
+
+    }
+    .navbar-brand {
+        padding:0px;
+        margin : 0px 0px 0px 0px;
+    }
+    .navbar-collapse {
+        padding: 0px;
+        margin:0px 0px 0px 0px
+    }
+    .btn-chat {
+        font-size: 1.01rem;
+        padding:5px 0px 5px 0px;
+        margin:0px 0px 0px 0px;
+    }
+    div.container-fluid {
+        padding:0px 0px 0px 0px;
+    }
+}   
+@media (max-width: 768px) {
+    .donate-section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .form-select {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 320px) {
+    .navbar-brand {
+        padding:0px;
+        margin : 0px 0px 0px 0px;
+    }
+    .navbar-collapse {
+        padding: 0px;
+        margin:0px 0px 0px 0px
+    }
+    .btn-chat {
+        font-size: 1.01rem;
+        padding:5px 0px 5px 0px;
+        margin:0px 0px 0px 0px;
+    }
+    div.container-fluid {
+        padding:0px 0px 0px 0px;
+    }
+}
+
+header {
+    background-color: var(--very-light-gray);
+    padding: 50px;
+}
+@media (max-width: 320px) {
+    .navbar-brand {
+        padding:0px;
+        margin : 0px 0px 0px 0px;
+    }
+    .navbar-collapse {
+        padding: 0px;
+        margin:0px 0px 0px 0px
+    }
+    .btn-chat {
+        font-size: 1.01rem;
+        padding:5px 0px 5px 0px;
+        margin:0px 0px 0px 0px;
+    }
+    div.container-fluid {
+        padding:0px 0px 0px 0px;
+    }
+    .donate-section{
+       /* margin-inline: ;*/
+        margin-block: 40px 40px 40px 40px;
+    }
+}
